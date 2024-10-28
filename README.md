@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Convolution and Edge Detection with Sobel Operators</title>
 </head>
 <body>
 
@@ -55,7 +54,7 @@
 <ol>
     <li><strong>Load an Image</strong>:</li>
     <pre><code>import cv2
-image = cv2.imread</code></pre>
+image = cv2.imread('path_to_image.png', cv2.IMREAD_GRAYSCALE)</code></pre>
 
     <li><strong>Apply the Sobel Filter</strong>:</li>
     <pre><code>sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, 0, ksize=3)
